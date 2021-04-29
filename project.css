@@ -1,0 +1,271 @@
+body {
+	margin: 0;
+	font-family: "Segoe UI";
+}
+
+
+
+/* Navbar */
+
+.nav-bar {
+	overflow: hidden;
+	background-color: #333;
+}
+
+.nav-bar a {
+	float: left;
+	padding: 14px 16px;
+	color: #C9C9C9;
+	font-size: 17px;
+	text-decoration: none;
+}
+
+.nav-bar a.active {
+	color: #FFFFFF;
+}
+
+.dropdown {
+	float: left;
+	overflow: hidden;  /* borrar */
+}
+
+.dropdown .dropbtn {
+	font-size: 17px;
+	border: none;
+	outline: none;
+	padding: 14px 16px;
+	color: #FFFFFF;
+	background-color: #333;
+	font-family: "Segoe UI";
+	margin: 0;
+}
+
+.nav-bar > a:hover, .dropdown:hover .dropbtn {
+	color: #E4E4E4;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 120px;
+	z-index: 1;
+	margin-left: 14px;
+}
+
+.dropdown-content a {
+	display: block;
+	float: none;
+	padding: 8px 16px;
+	color: black;
+	text-decoration: none;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+
+/* image container */
+
+.parent-container {
+	min-height: 95vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.image-container {
+	width: 100vw;
+	height: 96vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.image-container img {
+	width: 100vw;
+	height: 96vh;
+	object-fit: cover;
+	opacity: 0.9;
+}
+
+.image-container div:first-of-type {
+	width: 55vw;
+	height: 55vh;
+	position: absolute;
+	border: white 5px solid;
+}
+
+.image-container div:last-child {
+	width: 35vw;
+	height: auto;
+	position: absolute;
+	left: 50vw;
+	padding: 2vh;
+	font-size: max(8px, 1.2vw);
+	background-color: #333;
+	color: #E4E4E4;
+}
+
+.main-analytics {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: max(16px, 2vw);
+	width: max(400px, 55vw);
+}
+
+.main-analytics img {
+	width: 40vw;
+}
+
+.main-analytics h2 {
+	margin: 15px;
+	text-decoration: underline;
+	color: #707070;
+}
+
+
+/* Programming: languages-container */
+
+@media (max-width: 700px) {
+.languages-container section {
+	width: 100vw;
+	height: 48vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+}
+
+@media (min-width: 700px) {
+.languages-container {
+	display: grid;
+	grid-template-columns: 50% 50%; 
+    grid-template-rows: 95vh;
+	grid-column-gap: 0px;
+	}
+
+.languages-container section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+}
+
+.languages-container section:first-child {
+    background-color: #477583;
+    color: #EACC54;
+}
+
+.languages-container section:last-child {
+    background-color: #EACC54;
+    color: #477583;
+}
+
+.language {
+	font-size: max(11vw, 16vh);
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.learn {
+	background-color: #333;
+	color: #C9C9C9;
+	font-size: max(1.5vw, 1.9vh);
+	margin-top: 15px;
+	padding: 10px 20px;
+}
+
+.learn:hover {
+	color: #E4E4E4;
+}
+
+
+
+/* C++ and Python */
+
+.blue {
+	background-color: #477583;
+}
+
+.yellow {
+	background-color: #EACC54;
+}
+
+.child-container {
+	width: max(60vh, 50vw);
+	margin: 12px;
+	padding-bottom: 7px;
+	font-size: max(1.5vh, 1.2vw);
+	border-radius: 12px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #333;
+}
+
+.blue .child-container:nth-of-type(odd) {
+	background-color: #DFE8EB;
+}
+
+.blue .child-container:nth-of-type(even) {
+	background-color: #B9C2C5;
+}
+
+.yellow .child-container:nth-of-type(odd) {
+	background-color: #AFCBCC;
+}
+
+.yellow .child-container:nth-of-type(even) {
+	background-color: #688A8B;
+}
+
+.grandchild-container {
+	width: max(17vh, 15vw);
+	margin: 2px;
+	padding: 5px;
+	background-color: #333;
+	border-radius: 6px;
+	font-size: max(1.5vh, 1.2vw);
+	color: #C9C9C9;
+}
+
+.grandchild-container:hover {
+	color: #E4E4E4;
+}
+
+
+/* Footer */
+
+footer {
+	display: block;
+	background-color: #333;
+	color: #C9C9C9;
+	text-align: center;
+	padding: 14px 16px;
+}
+
+
+/* DUBTES 
+
+button navbar: no funciona;
+Foto logo navbar
+Separació entre C++ i Learn
+*/
